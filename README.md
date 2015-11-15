@@ -1,25 +1,47 @@
-## Introduction
+# CodeIgniter Bootstrap
 
-CodeIgniter Bootstrap kick starts the development process of the web development process by including Twitter Bootstrap into CodeIgniter. It also includes certain libraries such as AWS and Facebook in-case you are developing applications requiring those SDKs. So stop writing the same code over again and start working on your idea.
+[![Join the chat at https://gitter.im/sjlu/CodeIgniter-Bootstrap](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sjlu/CodeIgniter-Bootstrap?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-CodeIgniter Bootstrap follows the path where it lazy loads libraries. Though the project footprint may be large, the memory footprint will still be extremely light. Try not to autoload libraries as it does not follow the CodeIgniter convention (though some libraries do make sense to autoload).
+Bundles the following packages together.
 
-## Installation
+* [CodeIgniter](https://github.com/bcit-ci/CodeIgniter)
+* [CodeIgniter Rest Server](https://github.com/chriskacerguis/codeigniter-restserver)
+* [Twitter Bootstrap](https://github.com/twbs/bootstrap)
+* [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+* [lodash](https://github.com/lodash/lodash)
 
-Derived from CodeIgniter, read [CodeIgniter Installation](http://codeigniter.com/user_guide/installation/index.html) for how to install using this [zipball](https://github.com/sjlu/CodeIgniter-Bootstrap/zipball/master) instead. If you're not familiar with CodeIgniter, I suggest reading the [CodeIgniter Tutorial](http://codeigniter.com/user_guide/tutorial/index.html) on how to get started and read the [wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
+## Use
 
-## Documentation
+If you're planning on just using/developing with CodeIgniter Bootstrap, don't clone the repository. Instead, use these steps to get a pre-compiled version of it.
 
-Check out the [Wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for more information.
+* Download the latest [package](https://github.com/sjlu/CodeIgniter-Bootstrap/releases/download/1.0.2/CodeIgniter-Bootstrap.zip)
+    * Or alternatively download another [release](https://github.com/sjlu/CodeIgniter-Bootstrap/releases)
+* Use like any other [CodeIgniter install](http://codeigniter.com/user_guide/installation/index.html)
 
-## Releases
+## Build
 
-This is currently a very active project, there are no projected release locks planned. All changes will be latest in master and may be unstable.
+If you plan on extending the build process, you should follow these steps. This will only work on a _*nix_ machine and not on a Windows machine.
+
+* First clone this reposistory
+```
+git clone git@github.com:sjlu/CodeIgniter-Bootstrap.git
+cd CodeIgniter-Bootstrap
+```
+
+* Run the makefile
+```
+make
+```
+
+* Unzip the build
+```
+unzip CodeIgniter-Bootstrap.zip
+```
+
+## Docs
+
+Check out the [Wiki](https://github.com/sjlu/CodeIgniter-Bootstrap/wiki) for information and CodeIgniter guides.
 
 ## License
 
 MIT with [CodeIgniter Amendments](http://codeigniter.com/user_guide/license.html)
-
-## Other
-
-If you're looking for a LESS and/or JS compilier, try out another flavor like [CodeIgniter Sunrise](https://github.com/sjlu/CodeIgniter-Sunrise).
